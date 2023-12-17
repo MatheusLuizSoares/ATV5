@@ -24,4 +24,11 @@ while True:
      strNomeArq = f"{strDiretorio}/cartola_fc_{ano}.json"
     with open(strNomeArq, "r", encoding='UTF-8') as dictOpen:
         dic_cartola = json.load(dictOpen)
+        dic_cartola=json.loads(dic_cartola)
+        dictOpen.close()
+        break
+ 
   
+escalaçao=["343","352","433","442","451","532","541"]
+while True:
+   escala_usuario=str(input("Escolha uma escalação ou digite 0 para sair"))
