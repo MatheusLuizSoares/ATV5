@@ -7,3 +7,7 @@ strURL += '@dataInicial=%2701-01-2021%27&@dataFinalCotacao=%2712-31-2021%27&$for
 dictCotacoes = requests.get(strURL).json()
 
 Ano_atual = datetime.datetime.now().year
+while True:
+ ano=int(input("Digite um ano qualquer (que não seja superior ao ano atual):"))
+ if ano>Ano_atual:
+  break
