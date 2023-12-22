@@ -30,7 +30,7 @@ for servidor in dictServidores:
                 break
             
 
-        if not campus_encontrado:
+        if not campos_encontrado:
             listInfo.append([sigla_campos, {'docente': 0, 'tecnico_administrativo': 0, 'estagiario': 0, 'indefinida': 0}])
             for campus_entry in listInfo:
                 if campus_entry[0] == sigla_campos:

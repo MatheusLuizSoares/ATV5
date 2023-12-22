@@ -80,4 +80,3 @@ with open(caminhoArquivoCSV, mode='w', encoding='UTF-8') as arquivoCSV:
         arquivoCSV.write(f"{mes} - {mediaCompra} - {mediaVenda}\n")
 
 print(f"Os arquivos JSON e CSV foram salvos no diretório: {diretorio}.")
-
