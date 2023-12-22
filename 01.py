@@ -29,30 +29,29 @@ for servidor in dictServidores:
                 campus_encontrado = True
                 break
             
-        # se não achar o campus adiciona a lista
+
         if not campus_encontrado:
-            listInfo.append([siglacampos, {'docente': 0, 'tecnico_administrativo': 0, 'estagiario': 0, 'indefinida': 0}])
+            listInfo.append([sigla_campos, {'docente': 0, 'tecnico_administrativo': 0, 'estagiario': 0, 'indefinida': 0}])
             for campus_entry in listInfo:
-                if campus_entry[0] == sigla_campus:
+                if campus_entry[0] == sigla_campos:
                     campus_entry[1][categoria] += 1
                     break
 
 
-# Adiciona as disciplinas de ingresso na lista listDoc
 for servidor_info in dictServidores:
-    # Certifica-se de que há pelo menos 2 elementos e que o segundo não é vazio
+
     if len(servidor_info[0][1].split(';')) >= 2 and servidor_info[0][1].split(';')[1]:
         disciplina_ingresso = servidor_info[0][1].split(';')[1]
         encontrado = False
-        for item in listDoc:
+        for item in listdoc:
             if item[0] == disciplina_ingresso:
                 item[1] += 1
                 encontrado = True
                 break
         if not encontrado:
-            listDoc.append([disciplina_ingresso, 1])
+            listdoc.append([disciplina_ingresso, 1])
 
-listDoc.sort(key=lambda x: x[0])
+listdoc.sort(key=lambda x: x[0])
 
 diretorio_script = os.path.dirname(os.path.abspath(__file__))
 
@@ -69,14 +68,14 @@ with open(caminho_arquivo_csv, mode='w', newline='', encoding='UTF-8') as arquiv
 
 print(f"Os dados dos servidores foram salvos na pasta raiz.")
 
-# criando o arquivo dos Docentes
+
 caminho_arquivo_csv = os.path.join(diretorio_script, "docentes_disciplinas.csv")
 with open(caminho_arquivo_csv, mode='w', newline='', encoding='UTF-8') as arquivo_csv:
     escritor_csv = csv.writer(arquivo_csv, delimiter=';')
     
     escritor_csv.writerow(['Disciplina', 'quantidade de docentes da disciplina'])
     
-    for docente_entry in listDoc:
+    for docente_entry in listdoc:
         escritor_csv.writerow([docente_entry[0], docente_entry[1]])
 
 caminho_arquivo_csv_servidores = os.path.join(strDiretorio, "servidores_campi.csv")
