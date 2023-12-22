@@ -1,0 +1,62 @@
+{
+  "Janeiro": {
+    "soma_compra": 107.11200000000001,
+    "soma_venda": 107.1249,
+    "contador": 20
+  },
+  "Fevereiro": {
+    "soma_compra": 97.4861,
+    "soma_venda": 97.4969,
+    "contador": 18
+  },
+  "Março": {
+    "soma_compra": 129.8476,
+    "soma_venda": 129.8614,
+    "contador": 23
+  },
+  "Abril": {
+    "soma_compra": 111.2307,
+    "soma_venda": 111.24270000000001,
+    "contador": 20
+  },
+  "Maio": {
+    "soma_compra": 111.0994,
+    "soma_venda": 111.11220000000002,
+    "contador": 21
+  },
+  "Junho": {
+    "soma_compra": 105.6574,
+    "soma_venda": 105.67,
+    "contador": 21
+  },
+  "Julho": {
+    "soma_compra": 113.43260000000001,
+    "soma_venda": 113.4475,
+    "contador": 22
+  },
+  "Agosto": {
+    "soma_compra": 115.5247,
+    "soma_venda": 115.5378,
+    "contador": 22
+  },
+  "Setembro": {
+    "soma_compra": 110.8609,
+    "soma_venda": 110.87350000000002,
+    "contador": 21
+  },
+  "Outubro": {
+    "soma_compra": 110.78750000000002,
+    "soma_venda": 110.79960000000001,
+    "contador": 20
+  },
+  "Novembro": {
+    "soma_compra": 111.12519999999999,
+    "soma_venda": 111.13720000000002,
+    "contador": 20
+  },
+  "Dezembro": {
+    "soma_compra": 129.9639,
+    "soma_venda": 129.982,
+    "contador": 23
+  }
+}
